@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="clicking(1)">
-    <div class="box">
-        <table class="table text-left">
+    <h1 id="title" class="text-center">DOM PAGINATION TASK</h1>
+    <div class="table-responsive ">
+        <table class="table table-bordered  text-left">
             <tr style="background-color: rgb(46, 46, 46);color: white;">
-                    <td>Id</td>
-                    <td>Name</td>
-                    <td>Email</td>
+                    <th >Id</th>
+                    <th >Name</th>
+                    <th >Email</th>
             </tr>
             <tr scope="row" class="r1" style="background-color: rgb(187, 187, 187);">
                 <td id="ID1"></td>
@@ -68,24 +69,28 @@
             </tr>        
         </table>
     </div>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item" onmouseenter="this.style.color=red" id="pre" onclick="clicking(1)"><a class="page-link" href="#">First</a></li>
-          <li class="page-item" id="first" onclick="clicking('p')"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item" onclick="clicking(1)"><a class="page-link" href="#">1</a></li>
-          <li class="page-item" onclick="clicking(2)"><a class="page-link" href="#">2</a></li>
-          <li class="page-item" onclick="clicking(3)"><a class="page-link" href="#">3</a></li>
-          <li class="page-item" onclick="clicking(4)"><a class="page-link" href="#">4</a></li>
-          <li class="page-item" onclick="clicking(5)"><a class="page-link" href="#">5</a></li>
-          <li class="page-item" onclick="clicking(6)"><a class="page-link" href="#">6</a></li>
-          <li class="page-item" onclick="clicking(7)"><a class="page-link" href="#">7</a></li>
-          <li class="page-item" onclick="clicking(8)"><a class="page-link" href="#">8</a></li>
-          <li class="page-item" onclick="clicking(9)"><a class="page-link" href="#">9</a></li>
-          <li class="page-item" onclick="clicking(10)"><a class="page-link" href="#">10</a></li>
-          <li class="page-item" id="next" onclick="clicking('n')"><a class="page-link" href="#">Next</a></li>
-          <li class="page-item" id="last" onclick="clicking(10)"><a class="page-link" href="#">Last</a></li>
-        </ul>
-      </nav>
+    <div id="buttons" class="d-flex justify-content-center">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item" onmouseenter="this.style.color=red" id="pre" onclick="clicking(1)"><a class="page-link" href="#">First</a></li>
+              <li class="page-item" id="first" onclick="clicking('p')"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item" onclick="clicking(1)"><a class="page-link" href="#">1</a></li>
+              <li class="page-item" onclick="clicking(2)"><a class="page-link" href="#">2</a></li>
+              <li class="page-item" onclick="clicking(3)"><a class="page-link" href="#">3</a></li>
+              <li class="page-item" onclick="clicking(4)"><a class="page-link" href="#">4</a></li>
+              <li class="page-item" onclick="clicking(5)"><a class="page-link" href="#">5</a></li>
+              <li class="page-item" onclick="clicking(6)"><a class="page-link" href="#">6</a></li>
+              <li class="page-item" onclick="clicking(7)"><a class="page-link" href="#">7</a></li>
+              <li class="page-item" onclick="clicking(8)"><a class="page-link" href="#">8</a></li>
+              <li class="page-item" onclick="clicking(9)"><a class="page-link" href="#">9</a></li>
+              <li class="page-item" onclick="clicking(10)"><a class="page-link" href="#">10</a></li>
+              <li class="page-item" id="next" onclick="clicking('n')"><a class="page-link" href="#">Next</a></li>
+              <li class="page-item" id="last" onclick="clicking(10)"><a class="page-link" href="#">Last</a></li>
+            </ul>
+        </nav>
+    </div>
+      <p id="description" class="text-center">This page have 100 E-mails with user name.</p>
       <script src="script.js"></script>
+      <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 </body>
 </html>
