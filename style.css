@@ -15,3 +15,14 @@ nav{
     justify-content: center;
     width: 100%;
 }
+#dot{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    #tohide,#first,#last{
+        display: none;
+    }
+    #dot{
+        display: block;
+    }
+}
