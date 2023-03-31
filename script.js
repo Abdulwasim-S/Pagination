@@ -6,9 +6,9 @@ function clicking(v){
             temp=1;
         }
     }
-    else if(v=="n"){
+    if(v=="n"){
         temp=temp+1;
-        if(temp>=1){
+        if(temp>=10){
             temp=10;
         }
     }
